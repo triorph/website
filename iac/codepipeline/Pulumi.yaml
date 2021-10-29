@@ -1,0 +1,3 @@
+name: codepipeline
+runtime: python
+description: Automate deployment of this code to AWS

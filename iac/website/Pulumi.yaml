@@ -1,0 +1,3 @@
+name: website
+runtime: python
+description: Store the cloudfront distribution information for serving the website
