@@ -1,8 +1,8 @@
 <div>
-    <div *ngIf="getBlogEntry() == null else blogEntry">
-        <p>Showing all blog entries</p>
-    </div>
-    <ng-template #blogEntry>
-        <p>Showing blog entry {{getBlogEntry()}}</p>
-    </ng-template>
+  <div *ngIf="getBlogEntry() == null; else blogEntry">
+    <p>Showing all blog entries</p>
+  </div>
+  <ng-template #blogEntry>
+    <p>Showing blog entry {{ getBlogEntry() }}</p>
+  </ng-template>
 </div>
