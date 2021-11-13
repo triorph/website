@@ -1,0 +1,5 @@
+<div>
+    <app-home-page *ngIf="getPageType() == PAGE_CHOICE().HOME_PAGE"></app-home-page>
+    <app-resume *ngIf="getPageType() == PAGE_CHOICE().RESUME_PAGE"></app-resume>
+    <app-blog *ngIf="getPageType() == PAGE_CHOICE().BLOG_POST"></app-blog>
+</div>

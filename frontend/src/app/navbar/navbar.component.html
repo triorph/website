@@ -1,8 +1,9 @@
 <div class="banner">
-  <span class="naventry">Welcome</span>
-  <span class="naventry">Home</span>
-  <span class="naventry">Resume</span>
-  <span class="naventry">Blog</span>
-  <div class="spacer"></div>
+    <span
+        *ngFor="let item of items; index as i;"
+        class="naventry"
+        (click)="navSelect(i)">
+        {{item}}
+    </span>
 </div>
 
