@@ -19,5 +19,9 @@ export class NavbarComponent implements OnInit {
     this.pageChoiceService.setPageChoice(i);
   }
 
+  getNavSelection(): number {
+    return this.pageChoiceService.getPageChoice();
+  }
+
   ngOnInit(): void {}
 }
