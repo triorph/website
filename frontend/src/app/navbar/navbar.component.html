@@ -3,6 +3,7 @@
     *ngFor="let item of items; index as i"
     class="naventry"
     [ngClass]="{ selected: getNavSelection() === i }"
+    id="{{ item }}"
     (click)="navSelect(i)"
   >
     {{ item }}
