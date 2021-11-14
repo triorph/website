@@ -6,17 +6,9 @@ import { PageChoiceService, PAGE_CHOICE } from '../page-choice.service';
   styleUrls: ['./page.component.css'],
 })
 export class PageComponent implements OnInit {
-  page_choice_service: PageChoiceService;
-
-  constructor(page_choice_service: PageChoiceService) {
-    this.page_choice_service = page_choice_service;
-  }
+  constructor(private page_choice_service: PageChoiceService) {}
 
   getPageType(): PAGE_CHOICE {
-    console.log(
-      'Getting page choice',
-      this.page_choice_service.getPageChoice()
-    );
     return this.page_choice_service.getPageChoice();
   }
 

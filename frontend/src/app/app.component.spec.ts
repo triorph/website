@@ -1,3 +1,4 @@
+import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
@@ -5,12 +6,8 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent, NavBarStubComponent, PageStubComponent],
     }).compileComponents();
   });
 
@@ -26,10 +23,17 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('The personal website for Michael Walsh');
   });
 
-  it('should render title', () => {
+  it('should have navbar and page', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('personal-website app is running!');
+    expect(compiled.querySelector('app-navbar')).toBeTruthy();
+    expect(compiled.querySelector('app-page')).toBeTruthy();
   });
 });
+
+@Component({ selector: 'app-navbar', template: '' })
+class NavBarStubComponent {}
+
+@Component({ selector: 'app-page', template: '' })
+class PageStubComponent {}

@@ -23,6 +23,7 @@ import { BlogPostComponent } from './page/blog/blog-post/blog-post.component';
     BlogPostComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  exports: [HomePageComponent, PageComponent, ResumeComponent],
   providers: [PageChoiceService],
   bootstrap: [AppComponent],
 })
