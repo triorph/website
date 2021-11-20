@@ -9,7 +9,7 @@ enum PAGE_CHOICE {
   providedIn: 'root',
 })
 export class PageChoiceService {
-  page_choice: PAGE_CHOICE = PAGE_CHOICE.HOME_PAGE;
+  page_choice: PAGE_CHOICE = PAGE_CHOICE.BLOG_POST;
   constructor() {}
 
   public setPageChoice(choice: PAGE_CHOICE) {

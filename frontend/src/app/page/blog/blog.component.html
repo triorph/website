@@ -1,8 +1,18 @@
 <div>
-  <div *ngIf="getBlogEntry() == null; else blogEntry">
+  <p>Showing blog posts</p>
+  <div *ngIf="getBlogEntry() == null">
     <p>Showing all blog entries</p>
+    <div
+      *ngFor="let item of getBlogSummaries() | async"
+      class="blog-summary"
+      id="{{ item }}"
+      (click)="blogSelect(item)"
+    >
+      {{ item.title }}
+    </div>
   </div>
   <ng-template #blogEntry>
-    <p>Showing blog entry {{ getBlogEntry() }}</p>
+    <p>showing a specific blow entry</p>
+    <app-blog-post [ blogEntry ]="getBlogEntry()"></app-blog-post>
   </ng-template>
 </div>
