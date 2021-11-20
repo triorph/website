@@ -5,8 +5,8 @@
   max-width: 960px;
   flex-direction: column;
   align-items: center;
-  background-color: #282a36;
-  color: #f8f8f2;
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 h1.name {
@@ -17,7 +17,7 @@ h1.job-title {
   margin-top: -10px;
   font-size: 22px;
   font-weight: 700;
-  color: #bd93f9;
+  color: var(--grey);
 }
 div.skills {
   align-items: center;
@@ -30,7 +30,7 @@ div.skill {
 div.skill-name {
   display: grid;
   font-weight: 700;
-  color: #bd93f9;
+  color: var(--grey);
   flex-direction: column;
   font-family: Arial;
 }
@@ -49,7 +49,7 @@ div.work-experience {
 
 div.item-time {
   font-weight: 900;
-  color: #bd93f9;
+  color: var(--grey);
 }
 
 div.item-title {
@@ -80,9 +80,4 @@ div.reference-item {
   display: grid;
   width: 600px;
   grid: auto auto auto / auto auto;
-}
-
-em {
-  font-weight: bold;
-  font-style: normal;
 }

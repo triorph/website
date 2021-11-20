@@ -6,16 +6,22 @@
   height: 60px;
   margin-top: 00px;
   display: flex;
+  margin: auto;
   align-items: center;
-  background-color: #1976d2;
-  color: white;
+  background-color: var(--navboxbg);
   font-weight: 600;
+}
+.navs {
+  margin: auto;
+  display: flex;
+  background-color: var(--navboxbg);
 }
 .naventry {
   all: unset;
   border-radius: 5px;
-  border: 2px solid #1976d2;
-  background-color: #1976d2;
+  border: 2px solid var(--navbg);
+  background-color: var(--navbg);
+  color: var(--navtext);
   height: 40px;
   width: 200px;
   margin: 0px 0px 0px;
@@ -28,10 +34,9 @@
   line-height: 24px;
 }
 .selected {
-  border-color: #76d219;
   border-width: 5px;
   border-radius: 5px;
-  border-color: #2986e2;
+  border-color: var(--navselectbg);
   padding: 5px;
-  background-color: #2986e2;
+  background-color: var(--navselectbg);
 }

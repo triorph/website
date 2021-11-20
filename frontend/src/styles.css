@@ -1,12 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --grey: #6e6a86;
+  --emph: #f6c177;
+  --fg: #ebbcba;
+  --bg: #191724;
+  --navbg: #eb6f92;
+  --navselectbg: #eb8fa2;
+  --navboxbg: #db5f82;
+  --navtext: black;
+  /* base = #191724,
+	surface = #1f1d2e,
+	overlay = #26233a,
+	inactive = #555169,
+	subtle = #6e6a86,
+	text = #e0def4,
+	love = #eb6f92,
+	gold = #f6c177,
+	rose = #ebbcba,
+	pine = #31748f,
+	foam = #9ccfd8,
+	iris = #c4a7e7,
+	highlight = #2a2837,
+	highlight_inactive = #211f2d,
+	highlight_overlay = #3a384a,
+	 */
+}
 
 html,
 body {
   height: 100%;
-  background-color: #282a36;
-  color: #f8f8f2;
+  background-color: var(--bg);
+  color: var(--fg);
 }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: var(--emph);
 }

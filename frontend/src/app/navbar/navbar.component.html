@@ -1,11 +1,13 @@
 <div class="banner">
-  <span
-    *ngFor="let item of items; index as i"
-    class="naventry"
-    [ngClass]="{ selected: getNavSelection() === i }"
-    id="{{ item }}"
-    (click)="navSelect(i)"
-  >
-    {{ item }}
-  </span>
+  <div class="navs">
+    <span
+      *ngFor="let item of items; index as i"
+      class="naventry"
+      [ngClass]="{ selected: getNavSelection() === i }"
+      id="{{ item }}"
+      (click)="navSelect(i)"
+    >
+      {{ item }}
+    </span>
+  </div>
 </div>
