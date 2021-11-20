@@ -6,3 +6,81 @@
   flex-direction: column;
   align-items: center;
 }
+
+h1.name {
+  font-size: 40px;
+  font-weight: 900;
+}
+h1.job-title {
+  margin-top: -10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: gray;
+}
+div.skills {
+  align-items: center;
+}
+div.skill {
+  display: grid;
+  width: 600px;
+  grid: auto / 150px auto;
+}
+div.skill-name {
+  display: grid;
+  font-weight: 700;
+  color: gray;
+  flex-direction: column;
+  font-family: Arial;
+}
+div.skill-description {
+  display: grid;
+  flex-direction: column;
+  left: 100px;
+}
+
+div.work-experience {
+  display: grid;
+  width: 600px;
+  grid: auto auto auto / 150px auto;
+  margin-bottom: 10px;
+}
+
+div.item-time {
+  font-weight: 900;
+  color: grey;
+}
+
+div.item-title {
+  font-weight: 900;
+  font-size: 19px;
+  margin-left: 0px;
+}
+
+div.item-provider {
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+div.item-description {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+div.education-item {
+  display: grid;
+  width: 600px;
+  grid: auto auto auto / 150px auto;
+}
+
+div.reference-item {
+  display: grid;
+  width: 600px;
+  grid: auto auto auto / auto auto;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}

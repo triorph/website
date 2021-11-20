@@ -1,13 +1,215 @@
 <div class="content" role="main">
-  <h1>Resume for Michael Walsh</h1>
-
-  <h2>Skills</h2>
-  <ul>
-    <li>Python</li>
-  </ul>
-
-  <h2>Work experience</h2>
-  <ul>
-    <li>Student first programme 2020 - now</li>
-  </ul>
+  <div class="header">
+    <h1 class="name">Michael Walsh</h1>
+    <h1 class="job-title">Software Developer</h1>
+  </div>
+  <div class="skills">
+    <h2 class="skills">Skills</h2>
+    <div class="skill">
+      <div class="skill-name">Communication</div>
+      <div class="skill-description">
+        <p>
+          I am able to communicate with a team effectively in all mediums. My
+          PhD proves my skill in written communication. I am able to use
+          <em>JIRA</em> to write up tickets, <em>Confluence</em> to document
+          processes, or just engage in meetings to come to a shared
+          understanding of what needs to be done.
+        </p>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-description">
+        <p>
+          I have been working in <em>Python</em> for over 10 years. In this
+          time, I have worked from a science and engineering background to a
+          more commercially focused background. I have had strong experience
+          going from: <em>sockets</em>, <em>C integration</em>, <em>numpy</em>,
+          <em>GTK</em>; to: <em>Restful APIs</em> running as
+          <em>microservices</em> in <em>docker</em> with the
+          <em>Django Rest Framework</em>.
+        </p>
+        <p>
+          Although my primary programming language is Python. I also have
+          experience with <em>C</em> and <em>Bash scripting</em>. As a hobby
+          project, I am currently teaching myself to code in the
+          <em>Rust</em> programming language.
+        </p>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">AWS</div>
+      <div class="skill-description">
+        <p>
+          I have been a key player in an <em>AWS</em> cloud migration. In this
+          system, we implemented a system with <em>Cloudfront</em> serving a
+          single page app via <em>S3</em> buckets, which would talk to our API
+          Gateway and be redirected into our Elastic Container Service
+          (<em>ECS</em>) cluster. The microservices provide
+          <em>backend</em> support, connecting to a postgresql
+          <em>RDS</em> instance. The infrastructure was all managed via
+          <em>Pulumi</em>, and I was instrumental in getting the pulumi code
+          written and guiding it to the desired quality.
+        </p>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Linux</div>
+      <div class="skill-description">
+        <p>
+          I have been working from Linux computers for over 10 years. I am
+          comfortable in a linux shell, whether it is looking through scripts,
+          to configuring custom things. I currently have a somewhat personalised
+          environment setup, using <em>Zsh</em> with oh-my-zsh and
+          powerlevel10k, tmux, the awesome window-manager, the kitty terminal,
+          and <em>neovim</em> with both <em>Python</em> and <em>Rust</em> LSPs
+          integrated.
+        </p>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Git</div>
+      <div class="skill-description">
+        <p>
+          I am familiar with both git and mercurial as distributed version
+          control systems. In my current job I have written documentation for
+          the team named “Don’t fear the rebase” on how to use one of git’s
+          scarier commands in a safe and hazard-free manner. I am competent at
+          dealing with various branching strategies, and fixing up git trees
+          after mistakes have been made in them.
+        </p>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Quick learner</div>
+      <div class="skill-description">
+        <p>
+          I am able to pick up new skills quickly. In my recent position, I was
+          able become productive in less than a week, and had fixed a 2 year old
+          bug in an obscure part of the system within 3 weeks. I think one of my
+          key strengths is the ability to dive into unexplored territory and
+          piece together what is going on. This was also evident in our team’s
+          AWS migration, where I became instrumental to its success despite
+          having very little knowledge of how it worked before I started.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="experience">
+    <h2>Work experience</h2>
+    <div class="work-experience">
+      <div class="item-time">2020 - present</div>
+      <div class="item-title">Senior Analyst/Developer</div>
+      <div></div>
+      <div class="item-provider">
+        Student first programme - University of Canterbury
+      </div>
+      <div></div>
+      <div class="item-description">
+        <p>
+          At the student first programme, I was able to thrive as lead develop
+          for the <em>backend API</em> team. This role involves software
+          development of <em>Restful APIs</em> to store personally identifiable
+          data for the University’s student management system. This involves 20
+          microservices running in <em>docker</em> containers, each running a
+          <em>django rest framework</em> server.
+        </p>
+        <p>
+          We also recently did a successful migration to the <em>AWS</em> cloud.
+          We have ported our existing system to run via an <em>ECS</em> cluster
+          (with an <em>Aurora Serverless RDS</em> backend running
+          <em>postgresql</em>). The infrastructure was written in
+          <em>Pulumi</em>, an IaC tool that allows for <em>Python</em> to be
+          used. I stepped into help with this, and became a key part of having
+          this system work.
+        </p>
+        <p>
+          As team lead, I was frequently in charge of ticket writing for the
+          features we were working on. I would work with others to analyse what
+          was required, using my understanding of the existing patterns in the
+          software, and break it down into smaller tasks. Part of this is
+          working with the delivery lead in order to provide frequent feedback
+          about expected time estimates, slippage, and prioritisation of the
+          existing backlog.
+        </p>
+      </div>
+    </div>
+    <div class="work-experience">
+      <div class="item-time">2014 - 2020</div>
+      <div class="item-title">Software Engineer and Scientist</div>
+      <div></div>
+      <div class="item-provider">MARS BioImaging Ltd</div>
+      <div></div>
+      <div class="item-description">
+        <p>
+          After finishing my PhD, I moved to the MARS project’s commercial
+          spin-off. In this job, I primarily used <em>Python</em> for
+          <em>software development</em> of the MARS controller system. I was
+          responsible for all software related to the MARS camera subset of the
+          system, and was frequently the go-to person regarding changes to most
+          aspects of the system. I also spent a significant quantity of time
+          working with the MARS camera devices, working with the contracted
+          manufacturers to <em>diagnose issues</em> in the electrical hardware.
+          Near the end, I was been responsible for getting the newest
+          <em>Version 6 scanners</em> operational, and started their initial
+          planning for <em>FDA compliance</em>, and developing a
+          <em>web UI</em> for control of the scanner hardware
+        </p>
+      </div>
+    </div>
+    <div class="work-experience">
+      <div class="item-time">Summer 2008 - 2009</div>
+      <div class="item-title">Software Tester (Internship)</div>
+      <div></div>
+      <div class="item-provider">ARANZ Medical Ltd</div>
+    </div>
+    <div class="work-experience">
+      <div class="item-time">Summer 2007 - 2008</div>
+      <div class="item-title">Junior Software Developer (Internship)</div>
+      <div></div>
+      <div class="item-provider">Allied Telesis Ltd</div>
+    </div>
+  </div>
+  <div class="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <div class="item-time">2010 - 2013</div>
+      <div class="item-title">PhD in Bioengineering</div>
+      <div></div>
+      <div class="item-provider">University of Otago, Otago, New Zealand</div>
+      <div></div>
+      <div class="item-description">
+        <p>
+          For my PhD I worked on a Thesis titled “Spectral CT Development”. My
+          study consisted of: electrical characterisation of the novel Medipix3
+          detector family; <em>software development</em> for the MARS brand of
+          CT scanners; and <em>design/implementation</em> of other
+          <em>algorithms</em> for CT characterisation and improved performance
+        </p>
+      </div>
+    </div>
+    <div class="education-item">
+      <div class="item-time">2006-2009</div>
+      <div class="item-title">BE(Hons) in Computer Engineering</div>
+      <div></div>
+      <div class="item-provider">
+        University of Canterbury, Christchurch, New Zealand
+      </div>
+      <div></div>
+      <div class="item-description">
+        <p>
+          In this degree I studied a mix of Computer Science and Electrical
+          Engineering. This gave me a wide range of skills such as
+          <em>Signal Processing</em>; <em>Software Development/Engineering</em>;
+          <em>Embedded Systems</em>; <em>Control Systems</em>;
+          <em>Networking</em>; <em>Databases</em>; <em>Computer Algorithms</em>;
+          <em>AI/Machine Learning</em>; and <em>Project Management</em>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="references">
+    <h2>References</h2>
+    <div class="reference-item">Can be provided on request</div>
+  </div>
 </div>
