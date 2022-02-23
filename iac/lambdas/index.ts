@@ -8,13 +8,29 @@ const authorizerRole = new aws.iam.Role("myauthorizer-role", {
   }),
 });
 
+const createBlogPostRole = new aws.iam.Role("createblogpost-role", {
+  assumeRolePolicy: aws.iam.assumeRolePolicyForPrincipal({
+    Service: ["lambda.amazonaws.com"],
+  }),
+});
+
 // Create the Authorizer Lambda
 const authorizerLambda = new aws.lambda.Function("authorizer-lambda", {
   code: new pulumi.asset.FileArchive("./authfunction"),
   role: authorizerRole.arn,
   handler: "index.handler",
-  runtime: aws.lambda.NodeJS8d10Runtime,
+  runtime: "nodejs14.x",
 });
+
+const createBlogPostLambdaFunction = new aws.lambda.Function(
+  "create-blog-post",
+  {
+    code: new pulumi.asset.FileArchive("./createblogpost"),
+    role: createBlogPostRole.arn,
+    handler: "index.handler",
+    runtime: "nodejs14.x",
+  }
+);
 
 // Create a role for the gateway to use to invoke the Authorizer Lambda
 const gatewayRole = new aws.iam.Role("gateway-role", {
